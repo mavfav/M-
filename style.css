@@ -1,0 +1,231 @@
+/*==================================================*/
+/* Global Elements */
+/*==================================================*/
+
+* {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 100%;
+}
+
+nav{
+	height: 100px;
+	text-align: right;
+}
+nav h1{
+	width: 183em;
+	height: 47em;
+	background: url('imgs/mø.png');
+	text-indent: -999em;
+	text-align: left;
+	cursor: pointer;
+	margin: 50px 0 0 60px;
+}
+nav h1 a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+nav .nav-links{
+	float: right;
+	margin: -35px 60px 0 0;
+}
+nav a{
+	display: moz-inline-stack; 
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+	text-decoration: none;
+	padding-left: 40px;
+	color: #6C6C6C;
+}
+nav a.selected{
+	color: #DB392A;
+}
+nav span{
+	height: 1px;
+	width: 90%;
+	background: #CCC;
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.content, .contact-content{
+	width: 100%;
+	margin: 0 auto;
+	padding: 70px 0 0 0;
+	background: #eee;
+}
+
+.content .header-type-1, .contact-content .header-type-1{
+	font-weight: 400;
+	font-size: 42px;
+	color: #757575;
+	line-height: 45px;
+	text-align: center;
+}
+
+.content .header-type-2, .contact-content .header-type-2{
+	font-weight: 500;
+	font-size: 36px;
+	color: #2A2A2A!important;
+	line-height: 39px;
+	display: moz-inline-stack; 
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+}
+	.content .header-type-2 span, , .contact-content .header-type-2 span{
+		display: block;
+		margin: 15px 0;
+		height: 1px;
+		width: 25%;
+		background: #2A2A2A;
+	}
+
+.content p, .contact-content p{
+	max-width: 700px;
+	font-weight: 40;
+	font-size: 1em;
+	color: #757575;
+	line-height: 2.313em;
+	margin-bottom: 30px;
+}
+	.content .small-paragraph, .contact-content .small-paragraph{
+		text-align: center;
+		margin: 0 auto;
+		padding: 30px 0 70px 0!important;
+	}
+
+footer{
+	position: static;
+	height: 80px;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	background: #2A2A2A;
+}
+
+footer img{
+	float: left;
+	width: 148px;
+	height: 38px;
+	margin: 20px 0 0 40px;
+}
+
+footer span{
+	font-size: .8em;
+	font-weight: 500;
+	color: #FFF;
+	line-height: 80px;
+	margin: 0 40px 0 0;
+}
+
+/*==================================================*/
+/* Home */
+/*==================================================*/
+
+
+#home #left-section, #home #right-section{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: moz-inline-stack; 
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+}
+
+#home #left-section{
+	background: #f7f9f9;
+	width: 100%;
+	color: #FFF;
+}
+
+	#left-section h1{
+		width: 260px;
+		height: 668px;
+		background: url('imgs/mø.png') center center no-repeat;
+		text-indent: -999em;
+		position: absolute;
+		left: 50%;
+		top: 50%; 
+		margin-left: -130px;
+		margin-top: -300px;
+		background-size: 100%;
+	}
+
+#home #right-section{
+	background: #F4F4F4;
+	width: 50%;
+	right: 0;
+	color: #2A2A2A;
+}
+
+#right-section nav{
+	width: 60%;
+	height: 260px;
+	position: absolute;
+	left: 50%;
+	top: 50%; 
+	text-align: left;
+	margin-left: -25%;
+	margin-top: -130px;
+}
+
+#right-section h2{
+	font-weight: 200;
+	letter-spacing: -0.0em;
+	font-size: 2em;
+	color: #2A2A2A;
+	margin-bottom: 40px;
+}
+
+#right-section nav a{
+	font-weight: 400;
+	font-size: 0.938em;
+	color: #6C6C6C;
+	line-height: 2.5em;
+	display: block;
+	text-decoration: none;
+	padding: 0;
+}
+
+#right-section nav a:hover{
+	color: #DB392A;
+}
+
+.footer-text{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #CCC;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+
+/*==================================================*/
+/* Responsive */
+/*==================================================*/
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 768px) {}
+
+/*==================================================*/
+/* Retina */
+/*==================================================*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+     #home .left-section h1{ background: url('imgs/mø.png') center center no-repeat; background-size: 100%; }
+     nav h1{ background: #fff url('imgs/mø.png') center center no-repeat; background-size: 100%; }
+}
